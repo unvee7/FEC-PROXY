@@ -5,7 +5,7 @@ const logo = "m 499.3 736.7 c -51 -64 -81 -120.1 -91 -168.1 c -10 -39 -6 -70 11 
 const Logo = () => {
   return (
     <div className="logo-box">
-      <svg viewBox="0 0 1000 1000" role="presentation" className="logo">
+      <svg viewBox="0 0 1000 1000" role="presentation" className="logo search-svg">
         <path d={logo} />
       </svg>
     </div>

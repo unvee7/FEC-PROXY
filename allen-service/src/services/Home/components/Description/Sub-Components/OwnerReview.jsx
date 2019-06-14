@@ -20,7 +20,7 @@ const OwnerReview = () => {
           alt="review-picture"
           className="review-picture"
         />
-        <svg viewBox="0 0 14 24" role="img" className="review-picture-medal">
+        <svg viewBox="0 0 14 24" role="img" className="review-picture-medal search-svg">
           <path d={whiteFill} fill="#fff" />
           <path d={orangeFill} fill="#ffb400" />
           <path d={redFill} fill="#ff5a5f" />

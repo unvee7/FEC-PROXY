@@ -6,7 +6,7 @@ const carrot =
 const Carrot = () => {
   return (
     <div className="carrot-box">
-      <svg viewBox="0 0 18 18" role="presentation" className="carrot">
+      <svg viewBox="0 0 18 18" role="presentation" className="carrot search-svg">
         <path d={carrot} />
       </svg>
     </div>

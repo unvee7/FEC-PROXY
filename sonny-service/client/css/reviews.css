@@ -1,4 +1,4 @@
-body {
+#reviews {
   margin: auto;
   padding: 0px 80px 0px 80px;
 }
@@ -53,7 +53,7 @@ h1 {
 
 .reviewHeaderContent {
   display: table-cell !important;
-  line-height: 0 !important;
+  line-height: 1.43 !important;
   padding: 0px 0px 24px 0px;
   vertical-align: middle !important;
 }
