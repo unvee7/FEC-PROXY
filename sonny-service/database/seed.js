@@ -43,10 +43,10 @@ let csvStream = csv
 
 		// create a new connection to the database
 		const connection = mysql.createConnection({
-			host: 'localhost',
+			// host: 'localhost',
 			user: 'root',
-			password: 'sonny',
-			database: 'airbnb'
+			password: '',
+			// database: 'airbnb'
 		});
 
         // open the connection

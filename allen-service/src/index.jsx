@@ -27,7 +27,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/retrieve', {
+    fetch('http://localhost:3001/retrieve', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

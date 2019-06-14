@@ -44,7 +44,7 @@ class Search extends React.Component {
     return (
       <div className="search-box" style={style} onBlur={this.onUserExitClick}>
         {/* Magnifying Glass */}
-        <svg viewBox="0 0 16 16" role="presentation" className="magnifying-glass">
+        <svg viewBox="0 0 16 16" role="presentation" className="magnifying-glass search-svg">
           <path d={magnifyingGlass} />
         </svg>
 
