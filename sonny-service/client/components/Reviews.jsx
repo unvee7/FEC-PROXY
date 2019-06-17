@@ -10,7 +10,8 @@ class Reviews extends React.Component {
     super(props);
     this.state = {
       allReviews: [],
-      isToggled: false
+      isToggled: false,
+      children: 0
     }
   }
 
@@ -42,11 +43,17 @@ class Reviews extends React.Component {
     })
   }
 
+  countChildren() {
+    this.setState({
+      children: this.children++
+    });
+  }
+
   render() {
+    let numChildren = 0;
     let sixReviews = this.state.allReviews.slice(0,6);
     return (
-      <div>
-        <hr className='hrMargin'></hr>
+      <div className='appContainer'>
         <h1>Reviews</h1>
         <div className='allReviews'>
           {
@@ -59,6 +66,7 @@ class Reviews extends React.Component {
                       content={review.content}
                       allReviews={this.state.allReviews}
                       seeAllReviewsMode={false}
+                      counter={numChildren++}
               />))
           }
         </div>

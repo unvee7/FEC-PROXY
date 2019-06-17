@@ -1,5 +1,4 @@
 const React = require('react');
-
 class Review extends React.Component {
   constructor(props) {
     super(props);
@@ -12,13 +11,16 @@ class Review extends React.Component {
 
   // assign a class based on where reviews are being loaded
   assignClass(key) {
+    console.log('assignClass called w/ key: ' + key);
     if(this.props.seeAllReviewsMode) {
       return 'review'
     }
     if(key % 2 === 0) {
-      return 'review right'
-    } else {
+      console.log('right assigned');
       return 'review left'
+    } else {
+      console.log('left assigned');
+      return 'review right'
     }
   }
 
@@ -101,12 +103,12 @@ class Review extends React.Component {
     }
 
     outputText = this.props.content;
-    const alternateClassAssignment = 1; // keep count
+    // let alternateClassAssignment = React.Children.count(children); // keep count
     // GET AGE OF REVIEW
-    const reviewAge = this.consolidateDaysPast(this.props.reviewAge);
+    let reviewAge = this.consolidateDaysPast(this.props.reviewAge);
 
     return (
-    <div className={this.assignClass(alternateClassAssignment+1)} key={this.props.id}>
+    <div className={this.assignClass(this.props.counter)} key={this.props.id}>
       <div className='header'>
         <img className='avatar' src={this.props.avatar}></img>
         <span className='reviewHeaderContent'>
