@@ -15,7 +15,7 @@ var db = require('./db');
 var database = require('./db/checkout.js');
 
 var app = express();
-var port = process.env.PORT || 3002;
+var port = 3002;
 
 var cors = require('cors'); // Allow CORS
 
