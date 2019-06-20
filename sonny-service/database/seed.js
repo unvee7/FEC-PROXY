@@ -43,10 +43,10 @@ let csvStream = csv
 
 		// create a new connection to the database
 		const connection = mysql.createConnection({
-			// host: 'localhost',
+			host: 'localhost',
 			user: 'root',
 			password: '',
-			// database: 'airbnb'
+			database: 'airbnb'
 		});
 
         // open the connection
@@ -64,3 +64,4 @@ let csvStream = csv
 
 stream.pipe(csvStream);
 
+// ALTER USER 'root'@'localhost' IDENTIFIED BY ''; // changes your mysql password
