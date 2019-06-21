@@ -75,7 +75,8 @@ class Modal extends React.Component {
     } else if (!this.state.endDate) {
       document.getElementById('endDate').focus();
     } else {
-      fetch('http://localhost:3002/', {
+      // fetch('http://localhost:3002/', {
+      fetch('/', {
         method: 'POST',
         body: JSON.stringify({
           checkin: this.state.startDate,
