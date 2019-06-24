@@ -2,6 +2,10 @@
 
 -- CREATE DATABASE airbnb;
 
+-- USE airbnb;
+
+-- USE ebdb;
+
 USE airbnb;
 
 CREATE TABLE `reviews` (

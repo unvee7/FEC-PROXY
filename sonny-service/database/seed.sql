@@ -1,4 +1,4 @@
-USE airbnb \
+USE ebdb \
 LOAD DATA LOCAL INFILE 'database/data.csv' \
 INTO TABLE reviews \
 FIELDS TERMINATED BY ',' \

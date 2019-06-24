@@ -135,7 +135,7 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px !important;
   margin: auto !important;
   /* z-index: 999; */
-  display: inline-block;
+  display: block;
 }
 
 .seeAllReviews {
@@ -168,10 +168,10 @@ hr {
 .reviewSearch {
   display: flex;
   padding: 20px;
-  position: relative;
-  top: -75px;
-  float: right;
-  width: 175px;
+  position: absolute;
+  top: 18px;
+  width: 235px;
+  right: 50px;
 }
 
 .searchBox {

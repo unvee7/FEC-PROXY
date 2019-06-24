@@ -4,11 +4,18 @@ const mysql = require('mysql');  // mysql -u root -p < database/schema.sql
 
 // CONNECT TO MYSQL WITH CREDENTIALS
 var connection = mysql.createConnection({
-    // host : 'localhost',
+    host : 'localhost',
     user : 'root',
-    // password: 'sonny',
     database : 'airbnb'
+
+    // host : 'aafg1anosul5i4.cmk5qh6smwj7.us-east-2.rds.amazonaws.com',
+    // port : 3306,
+    // user : 'sonny',
+    // password : 'crailtap',
+    // database : 'ebdb'
   });
+
+
 
 const defaultCorsHeaders = {
   'access-control-allow-origin': '*',

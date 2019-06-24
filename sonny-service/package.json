@@ -8,13 +8,16 @@
     "test:coverage": "jest --verbose --coverage",
     "start": "nodemon ./server/server.js",
     "build": "webpack -d --watch",
+    "awsbuild": "babel ./server/server.js --out-file ./server/server.compiled.js",
     "seed": "mysql -u root < database/seed.sql "
   },
+  "proxy": "http://localhost:3003",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
