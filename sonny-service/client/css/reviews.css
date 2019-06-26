@@ -21,7 +21,7 @@ h1 {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
-  display: inline-block;
+  display: block;
   margin-bottom: 48px;
 }
 
