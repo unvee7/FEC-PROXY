@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes/api.js');
 const path = require('path');
 const cors = require('cors');
+var brotli = require('brotli');
 
 // create express server
 const app = express();

@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mysql = require('mysql');  // mysql -u root -p < database/schema.sql
+var brotli = require('brotli');
 
 // CONNECT TO MYSQL WITH CREDENTIALS
 var connection = mysql.createConnection({

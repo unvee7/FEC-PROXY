@@ -23,6 +23,7 @@ h1 {
   -ms-font-smoothing: antialiased;
   display: block;
   margin-bottom: 48px;
+  color: #484848 !important;
 }
 
 .review > .header{
@@ -56,10 +57,12 @@ h1 {
   font-weight: 500;
   line-height: 1.375em !important;
   font-size: 16px;
+  color: #484848 !important;
 }
 
 .reviewAge {
   font-size: 14px;
+  color: #484848 !important;
 }
 
 .reviewHeaderContent {
@@ -71,6 +74,10 @@ h1 {
 
 .reviewText {
   font-size: 16px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.45em !important;
+  color: #484848 !important;
 }
 
 hr {
@@ -144,6 +151,7 @@ hr {
   -ms-font-smoothing: antialiased;
   color: var(--color-brand-plus, #914669) !important;
   font-weight: 500;
+  margin-top: 30px;
 }
 
 .transparentBackground {
@@ -162,7 +170,9 @@ hr {
   width: 25px;
   border-radius: 50% !important;
   overflow: hidden !important;
-
+  float: none !important;
+  height: auto;
+  margin: 0 0 20px 0;
 }
 
 .reviewSearch {
@@ -202,7 +212,7 @@ hr {
 }
 
 .loadingGif {
-  display: inline-block;
+  display: block;
   margin: auto;
   width: 100px;
   text-align: center;

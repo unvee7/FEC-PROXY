@@ -38,13 +38,13 @@ class AllReviewsLightBox extends React.Component {
           this.setState({
             reviews: this.state.reviews.slice(0, (this.state.numReviewsShowing++) * 7)
           })
-        ), 300)
+        ), 500)
       } else {
         setTimeout( () => (
           this.setState({
             reviews: this.props.allReviews.slice(0, (this.state.numReviewsShowing++) * 7)
           })
-        ), 300)
+        ), 500)
       }
     }
   }
@@ -71,7 +71,7 @@ class AllReviewsLightBox extends React.Component {
     // assigns loading gif to bottom of reviews if there are more reviews to load
     let loadingGif = (reviews) => {
       if (reviews.length < this.props.allReviews.length && !this.state.filterApplied) {
-        return (<img className='loadingGif' src='./imgs/loading.gif'></img>)
+        return (<img className='loadingGif' src='https://loading.io/spinners/reload/lg.ajax-syncing-loading-icon.gif'></img>)
       } else {
         return (<p className='loadingGif' >That's all the reviews!</p>)
       }
@@ -80,7 +80,7 @@ class AllReviewsLightBox extends React.Component {
     return (
       <div className='transparentBackground' onClick={this.seeAllReviews} onScroll={this.scrollHandler}>
           <div id='allReviewsLightBox'>
-          <img src='../imgs/x.png' className='allReviewsExitButton' onClick={this.seeAllReviews}></img>
+          <img src='https://image.flaticon.com/icons/svg/109/109602.svg' className='allReviewsExitButton' onClick={this.seeAllReviews}></img>
           <h1>{this.state.reviews.length} reviews</h1>
           <Search reviews={this.props.allReviews} filter={this.repopulateListForFilter} />
           {

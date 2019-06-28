@@ -17,7 +17,7 @@ class Reviews extends React.Component {
 
   getReviews(cb) {
     $.ajax({
-      url: '/reviews',
+      url: 'http://reviews.qr34qnsvtn.us-east-2.elasticbeanstalk.com/reviews',
       type: 'GET',
       dataType: 'json',
       success: (data) => {
